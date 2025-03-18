@@ -1,5 +1,7 @@
-//House Details Schemes
+
+
 import mongoose from "mongoose";
+
 const memberSchema = new mongoose.Schema({
   relation: { type: String, required: true },
   name: String,
@@ -13,13 +15,13 @@ const memberSchema = new mongoose.Schema({
   voterId: String,
   email: String,
   phone: String,
+  selectedSchemes: { type: [String], default: [] }, // Moved inside memberSchema
 });
 
 const houseDetailsSchema = new mongoose.Schema(
   {
     houseNo: { type: String, required: true, unique: true },
-    members: [memberSchema],
-    // schemes: { type: [String], default: [] },
+    members: [memberSchema], // Each member now has `selectedSchemes`
   },
   { timestamps: true }
 );

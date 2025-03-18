@@ -20,9 +20,6 @@ app.use("/api/selection", selectionRoutes); // Route setup
 app.use("/api/houses", houseRoutes); // ADD NEW ROUTE
 
 
-
-
-
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
