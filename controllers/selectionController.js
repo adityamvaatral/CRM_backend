@@ -24,7 +24,7 @@ export const createSelection = async (req, res) => {
     const selection = new Selection({ assembly, ward, booth, streetNo, houseNo });
     await selection.save();
  
-    res.status(201).json({ message: "Selection saved successfully", selection });
+    res.status(201).json({ message: "Assembly saved successfully", selection });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

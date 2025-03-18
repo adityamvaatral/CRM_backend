@@ -9,4 +9,5 @@ router.get("/:houseNo", getHouseDetails);
 router.get("/schemes/all", getSchemes);
 
 
+
 export default router;

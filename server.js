@@ -6,6 +6,7 @@ import selectionRoutes from "./routes/selectionRoutes.js";
 import houseRoutes from "./routes/houseRoutes.js";  // NEW ROUTE
 import errorHandler from "./middlewares/errorMiddleware.js";
 
+
 dotenv.config();
 connectDB();
 
@@ -17,6 +18,8 @@ app.use(express.json());
 // app.use("/api/selection", selectionRoutes);
 app.use("/api/selection", selectionRoutes); // Route setup
 app.use("/api/houses", houseRoutes); // ADD NEW ROUTE
+
+
 
 
 

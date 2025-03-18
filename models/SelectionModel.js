@@ -12,7 +12,7 @@ const selectionSchema = new mongoose.Schema(
   { timestamps: true }
 );
  
-const Selection = mongoose.model("Selection", selectionSchema);
+const Selection = mongoose.model("Assembly", selectionSchema);
  
 
 export default Selection;

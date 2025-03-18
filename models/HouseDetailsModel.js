@@ -19,7 +19,7 @@ const houseDetailsSchema = new mongoose.Schema(
   {
     houseNo: { type: String, required: true, unique: true },
     members: [memberSchema],
-    schemes: { type: [String], default: [] },
+    // schemes: { type: [String], default: [] },
   },
   { timestamps: true }
 );
